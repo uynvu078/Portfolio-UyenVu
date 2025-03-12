@@ -1,0 +1,77 @@
+/* ======================================== */
+/* CONTACT SECTION */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    margin: 0;
+    padding: 3rem 0;
+    box-sizing: border-box;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 1.5rem;
+    background: linear-gradient(to bottom, #FDFCFB, #E8E6E3);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(192, 160, 128, 0.3);
+    padding: 1.5rem 2rem;
+    transition: transform 0.4s ease-in-out;
+}
+.contact-info-upper-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 40px rgba(192, 160, 128, 0.3);
+    border-color: rgba(192, 160, 128, 0.348);
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-icon {
+    cursor: pointer;
+    height: 2.5rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.contact-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.email-icon {
+    cursor: pointer;
+    height: 3rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.email-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.contact-info-container p a {
+    font-size: 1.4rem;
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.contact-info-container p a:hover {
+    color: #C0A080;
+    text-decoration: underline;
+}

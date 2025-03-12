@@ -21,36 +21,37 @@
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Uyen Vu</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
     </nav>
+
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
 
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="profile picture" />
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Uyen Vu</h1>
-            <p class="section__text__p2">Full Stack Developer</p>
+            <p class="section__text__p1 fade-text">Hello, I'm</p>
+            <h1 class="title fade-title">Uyen Vu</h1>
+            <p class="section__text__p2 fade-text">Full Stack Developer</p>
             <div class="btn-container">
                 <button 
-                    class="btn btn-color-2" 
+                    class="btn btn-color-2 fade-btn" 
                     onclick="window.open('./assets/resume-example.pdf')">
                 Download CV</button>
                 <button 
-                    class="btn btn-color-1" 
+                    class="btn btn-color-1 fade-btn" 
                     onclick="location.href='./#contact'">
                 Contact Info</button>
             </div>
@@ -58,13 +59,13 @@
                 <img    
                     src="./assets/linkedin.png" 
                     alt="LinkedIn" 
-                    class="icon" 
+                    class="icon fade-icon" 
                     onclick="location.href='https://www.linkedin.com/in/uyen-vu-sf8358/'"
                 />
                 <img    
                     src="./assets/github.png" 
                     alt="GitHub" 
-                    class="icon" 
+                    class="icon fade-icon" 
                     onclick="location.href='https://github.com/uynvu078'"
                 />
             </div>
@@ -100,7 +101,7 @@
                             class="icon"
                         />
                         <h3>Education</h3>
-                        <p>B.Sc. Bachelors Degree <br>M.MBA. Minor Degree</p>
+                        <p>B.Sc. Computer Science <br>M.MBA. Minor Degree</p>
                     </div>
                 </div>
                 <div class="text-container">
@@ -260,7 +261,7 @@
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
+        <div class="project-details-container">
             <div class="about-containers">
                 <div class="details-container color-container">
                     <div class="article-container">
@@ -334,9 +335,9 @@
                 <img 
                     src="./assets/email.png" 
                     alt="EmailIcon" 
-                    class="icon contact-icon email-icon"
+                    class="icon email-icon"
                 >
-                <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                <p><a href="mailto:uyenvu315@gmail.com">uyenvu315@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
                 <img 
@@ -344,22 +345,19 @@
                     alt="LinkedInIcon" 
                     class="icon contact-icon"
                 >
-                <p><a href="http://example/linkedin.com">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/uyen-vu-sf8358/">LinkedIn</a></p>
             </div>
         </div>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+        <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer-divider"></div>
         <p>Copyright &#169; 2025 Uyen Vu. All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>

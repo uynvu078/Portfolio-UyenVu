@@ -64,6 +64,13 @@ body, html, header, #profile {
     box-shadow: 0px 0px 25px rgba(192, 160, 128, 0.5);
 }
 
+.title {
+    font-size: 3rem; /* Keep the size the same */
+    font-weight: bold;
+    margin-top: 0.8rem; /* Adjust this value as needed */
+    display: block; 
+}
+
 .section__text {
     align-self: center;
     text-align: center;
@@ -73,6 +80,20 @@ body, html, header, #profile {
 .section__text p {
     font-weight: 600;
 }
+
+.section__text__p3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 300; 
+    color: #666;
+    margin-top: 0.8rem; 
+    letter-spacing: 0.3px;
+    text-align: center; 
+    font-style: italic;
+    opacity: 0.9;
+    padding-bottom: 1rem;
+}
+
 
 #social-container {
     display: flex !important;

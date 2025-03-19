@@ -46,6 +46,14 @@
     margin: auto 0;
 }
 
+.about-details-container p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #4A3F35;
+    line-height: 1.5;
+    font-family: 'Merriweather', serif;
+}
+
 /* ======================================== */
 /* EXPERIENCE SECTION */
 
@@ -84,4 +92,134 @@ article {
 
 article .icon {
     cursor: default;
+}
+
+/* ----------------------------------------------------------------- */
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%; 
+    max-width: 900px;
+    flex-wrap: wrap; 
+}
+
+.skill-title {
+    background: #1E1E1E;
+    color: #F5F5F5;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
+    text-align: center;
+    min-width: 120px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.skill-arrow {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #A67C52;
+    text-shadow: 0px 3px 6px rgba(166, 124, 82, 0.6);
+}
+
+.skill-content {
+    display: flex;
+    flex-wrap: wrap;
+    background: transparent;
+    padding: 0.6rem 1rem;
+    border-radius: 0px;
+    flex-grow: 1;
+    text-align: left;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.skill-bubble {
+    background: #FDF6EC;
+    color: #2E2E2E;
+    padding: 0.7rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 2px solid transparent; 
+}
+.skill-bubble:hover {
+    background: #C0A080;
+    color: #FFFFFF;
+    border-color: #E6B87E;
+    box-shadow: 0px 6px 14px rgba(192, 160, 128, 0.5);
+    transform: translateY(-2px);
+}
+
+/* ---------------------- */
+/* RESPONSIVE STYLES */
+/* ---------------------- */
+
+/* Tablet (Medium Screens) */
+@media screen and (max-width: 1024px) {
+    .skills-container {
+        gap: 1rem;
+    }
+
+    .skill-row {
+        flex-direction: column; /* Stacks titles on top of bubbles */
+        align-items: center;
+        text-align: center;
+    }
+
+    .skill-title {
+        min-width: auto;
+        width: 60%;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .skill-arrow {
+        display: none; /* Hides arrow for better spacing */
+    }
+
+    .skill-content {
+        justify-content: center;
+    }
+}
+
+/* Mobile (Small Screens) */
+@media screen and (max-width: 600px) {
+    .skills-container {
+        margin-top: 1rem;
+        gap: 0.6rem;
+    }
+
+    .skill-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .skill-title {
+        width: 80%;
+        text-align: center;
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .skill-bubble {
+        font-size: 0.85rem;
+        padding: 0.6rem 0.9rem;
+    }
 }

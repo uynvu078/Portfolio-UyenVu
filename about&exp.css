@@ -28,7 +28,6 @@
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
@@ -148,7 +147,7 @@ article .icon {
 }
 
 .skill-bubble {
-    background: #FDF6EC;
+    background: #FCFAF5;
     color: #2E2E2E;
     padding: 0.7rem 1rem;
     border-radius: 20px;

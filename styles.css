@@ -13,11 +13,11 @@
 body {
     font-family: "Poppins", sans-serif;
     background: linear-gradient(to bottom, 
-        #FBF8F3, /* Soft, bright ivory for a luxurious feel */
-        #E5D8C7, /* Warm taupe with subtle gold undertones */
-        #B5A89C, /* Muted champagne beige for depth */
-        #E5D8C7, /* Reintroduce warm taupe to maintain richness */
-        #FBF8F3  /* Light ivory again for balance */
+        #FBF8F3, 
+        #E5D8C7, 
+        #B5A89C, 
+        #E5D8C7, 
+        #FBF8F3
     );
     color: #222;
 }

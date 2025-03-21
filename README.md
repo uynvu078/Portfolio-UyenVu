@@ -1,6 +1,6 @@
 # Uyen Vu's Developer Portfolio  
 
-### 🚀 Live Demo: [Portfolio Demo](#)
+### 🚀 Live Demo: [Portfolio](https://uynvu078.github.io/Portfolio-UyenVu/)
 
 ## Overview
 
@@ -51,13 +51,13 @@ If you'd like to run this project locally, follow these steps:
 | 🌟 Project Name | 🔗 Live Demo | 📝 Description |
 |---------------|-------------|--------------|
 | **Zentasker TODO App** | [Live Demo](#) | Full-stack task manager with JWT auth, drag-and-drop UI, and MongoDB backend |
-| **E-Commerce BEAU SHOP** | [Live Demo](#) | Elegant online store with user authentication and payment integration |
+| **E-Commerce BEAU SHOP** | [Live Demo](https://uynvu078.github.io/BEAUShop/) | Elegant online store with user authentication and payment integration |
 | **Real-Time Chat App** | [Live Demo](#) | WebSocket-based chat app with authentication and persistent history |
 
 ## Contact  
 
 📩 **Email:** [uyenvu315@gmail.com](mailto:uyenvu315@gmail.com)  
 🔗 **LinkedIn:** [linkedin.com/in/uyen-vu-sf8358](https://www.linkedin.com/in/uyen-vu-sf8358/)  
-🌍 **Portfolio:** [yourportfoliolink.com](#)  
+🌍 **Portfolio:** [uynvu078.github.io/Portfolio-UyenVu](https://uynvu078.github.io/Portfolio-UyenVu/)  
 
 ---

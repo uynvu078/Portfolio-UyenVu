@@ -11,8 +11,8 @@ This is my personal **developer portfolio**, showcasing my skills, projects, and
 - **Frontend:** HTML, CSS (Flexbox, Grid, Media Queries), JavaScript  
 - **Backend:** Node.js, Express.js  
 - **Database:** SQL (PostgreSQL, MySQL), MongoDB  
-- **Tools:** Git, GitHub, REST APIs, WebSockets, Agile methodologies  
-- **Deployment:** _(If hosted, add details like Vercel, Netlify, or your hosting service)_  
+- **Tools:** Git, GitHub, REST APIs, WebSockets, Agile 
+- **Deployment:** Github
 
 ## Features  
 
@@ -57,7 +57,7 @@ If you'd like to run this project locally, follow these steps:
 ## Contact  
 
 📩 **Email:** [uyenvu315@gmail.com](mailto:uyenvu315@gmail.com)  
-🔗 **LinkedIn:** [linkedin.com/in/yourname](#)  
+🔗 **LinkedIn:** [linkedin.com/in/uyen-vu-sf8358](https://www.linkedin.com/in/uyen-vu-sf8358/)  
 🌍 **Portfolio:** [yourportfoliolink.com](#)  
 
 ---

@@ -5,6 +5,7 @@
 @import './projects.css';
 @import './about&exp.css';
 @import './profile.css';
+@import './mediaqueries.css';
 
 * {
     margin: 0;

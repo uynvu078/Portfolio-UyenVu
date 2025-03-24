@@ -1,5 +1,6 @@
 /* GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 @import './footer.css';
 @import './contact.css';
 @import './projects.css';
@@ -91,32 +92,35 @@ nav, .nav-links {
     display: flex;
 }
 
-nav {
+nav#desktop-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 5%;
     background: rgba(30, 30, 30, 0.9);
     backdrop-filter: blur(5px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    padding: 1rem 5%;
 }
-
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
-    margin-left: auto;
-    font-size: 1.3rem;
-    font-weight: 400;
-}
+    gap: 3.5rem;
+}  
 
 .nav-links a {
+    font-family: 'DM Sans', sans-serif;
     color: white;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
+    font-size: 1.2rem;
 }
-
 .nav-links a:hover {
     color: #C0A080;
 }
@@ -142,12 +146,20 @@ nav {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    transition: color 0.3s ease-in-out;
-}
+    flex: 1;
+  }
 .logo:hover {
     color: #C0A080;
     cursor: pointer;
 }
+
+#hamburger-nav .logo {
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-left: 1rem;
+  }
 
 /* ========================================================================== */
 /* ========================================================================== */

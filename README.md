@@ -40,19 +40,13 @@ If you'd like to run this project locally, follow these steps:
    open index.html  #
    ```
 
-## Views 
-
-| 📌 Desktop View | 📌 Mobile View |
-|----------------|---------------|
-| ![Desktop Screenshot](#) | ![Mobile Screenshot](#) |
-
 ## Projects  
 
 | 🌟 Project Name | 🔗 Live Demo | 📝 Description |
 |---------------|-------------|--------------|
-| **Zentasker TODO App** | [Live Demo](#) | Full-stack task manager with JWT auth, drag-and-drop UI, and MongoDB backend |
+| **Zentasker TODO App** | [Live Demo](https://uynvu078.github.io/ZenTasker-Todo/) | Full-stack task manager with JWT auth, drag-and-drop UI, and MongoDB backend |
 | **E-Commerce BEAU SHOP** | [Live Demo](https://uynvu078.github.io/BEAUShop/) | Elegant online store with user authentication and payment integration |
-| **Real-Time Chat App** | [Live Demo](#) | WebSocket-based chat app with authentication and persistent history |
+| **Real-Time Chat App** | [Live Demo](https://uynvu078.github.io/ChatterBox/) | WebSocket-based chat app with authentication and persistent history |
 
 ## Contact  
 

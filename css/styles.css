@@ -323,3 +323,29 @@ section {
 .btn-container {
     gap: 1rem;
 }
+
+/* ======================================== */
+/* CONTACT SECTION */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  
+  .contact-form button {
+    align-self: flex-start;
+  }
+  

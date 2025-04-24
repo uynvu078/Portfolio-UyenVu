@@ -4,34 +4,120 @@ body, html, header, #profile {
     position: static !important;
     z-index: auto !important;
 }
-
-#profile {
-    position: relative;
+/* ========================================================================= */
+/* Full-screen split layout */
+#profile { 
+    height: 100vh;  
+    width: 100vw;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 5rem;
-    height: 100vh;
-    padding: 3rem;
-    margin-top: -2rem;
+    overflow: visible;
+    position: relative;
+    margin: 0; 
+    padding: 0;
+    margin-bottom: 0;
+    background: linear-gradient(
+        90deg,
+        #2a2a2a 0%,
+        #3a3a3a 15%,
+        #5a554f 30%,
+        #d6ccc2 60%,   
+        #f7f5f2 85%,  
+        #fefdfc 100% 
+    );
 }
+#profile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05), transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+} 
+  
+/* Layout container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2.5rem 5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+    
+/* ----------------------------------------------------------------- */
+/* Nav links (right) */
+.nav-links {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    gap: 3.5rem;
+    display: flex;
+    list-style: none;
+    padding: 0.5rem 1.5rem;
+    background: rgba(250, 245, 240, 0.7); /* soft warm grayish background */
+    border-radius: 999px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+}
+  
+.nav-links li a {
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0%;
+    background-color: #c49b66;
+    box-shadow: 0 0 0 transparent;
+    transition: width 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 4px;
+}
+.nav-links li a:hover::after {
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(196, 155, 102, 0.4);
+}
+.nav-links li a:hover {
+    color: #c49b66;
+}
+  
+    
 
-@keyframes fadeInProfile {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Right side image */
+.profile-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+  
+.profile-pic-rounded {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .section__pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+    height: 380px;
+    width: 380px;
+    margin-top: 40px;
     border-radius: 50%;
     flex-shrink: 0;
     overflow: hidden;
@@ -64,54 +150,43 @@ body, html, header, #profile {
     box-shadow: 0px 0px 25px rgba(192, 160, 128, 0.5);
 }
 
-.title {
-    font-size: 3rem; /* Keep the size the same */
-    font-weight: bold;
-    margin-top: 0.8rem; /* Adjust this value as needed */
-    display: block; 
-}
-
-.section__text {
-    align-self: center;
+.profile-name-tag {
+    margin-top: 0;
     text-align: center;
-    flex-grow: 1;
+    color: #333;
 }
-
-.section__text p {
-    font-weight: 600;
-}
-
-.section__text__p3 {
+  
+.profile-name-tag h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    font-weight: 300; 
-    color: #666;
-    margin-top: 0.8rem; 
-    letter-spacing: 0.3px;
-    text-align: center; 
-    font-style: italic;
-    opacity: 0.9;
-    padding-bottom: 1rem;
+    color: #2c2c2c;
+    margin: 0;
+}
+  
+  
+/* --------------------------------------------------------------- */
+/* Social Media Icons */
+.profile-icons {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 10;
 }
 
-
-#social-container {
-    display: flex !important;
-    justify-content: center;
-    margin-top: 1.5rem;
-    gap: 1.1rem;
-}
-
-#social-container img {
-    width: 45px;
-    height: 45px;
+.profile-icons img {
+    width: 48px;
+    height: 48px;
+    filter: invert(1);
     border-radius: 50%;
     display: block;
     transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
     cursor: pointer;
     position: relative;
 }
-#social-container img:hover {
+.profile-icons img:hover {
     transform: scale(1.1) rotate(2deg) !important; 
     filter: brightness(1.3) contrast(1.2); 
     box-shadow: 0px 10px 30px rgba(120, 110, 100, 0.6), 
@@ -119,6 +194,153 @@ body, html, header, #profile {
                 0px 2px 8px rgba(200, 175, 140, 0.3), 
                 0px 1px 5px rgba(215, 185, 145, 0.2); 
     background: radial-gradient(circle at center, rgba(235, 225, 215, 0.4) 0%, transparent 80%);
+}
+  
+/* Buttons */
+.btn-row {
+    display: flex;
+    gap: 1rem;
+}
+  
+.btn-outline,
+.btn-filled {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+  
+.btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.btn-outline:hover {
+    background: #fff;
+    color: #1d1d1d;
+}
+  
+.btn-filled {
+    background: #fff;
+    color: #1d1d1d;
+    border: none;
+}
+.btn-filled:hover {
+    background: #e5e5e5;
+}
+
+.section__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: #f2f2f2;
+    max-width: 600px;
+    padding-left: 2rem;
+    padding-right: 0;
+    padding-top: 3rem;
+    gap: 0.75rem;
+}
+.section__text p {
+    font-weight: 500;
+    color: #ccc;
+}
+.section__text__p1 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #555; 
+    letter-spacing: 2px; 
+    text-transform: uppercase;
+}
+
+.role-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    text-align: left;
+}
+
+.section__text__p2 {
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.section__text__p3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #bbbbbb;
+    line-height: 1.6;
+    font-style: italic;
+    letter-spacing: 0.3px;
+    opacity: 0.95;
+    margin: 0;
+    text-align: left;
+}
+
+.divider {
+    width: 100%;
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #5b4031, transparent);
+    margin: 1rem 0;
+    opacity: 1;
+    align-self: stretch;
+}
+  
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.btn-color-2 {
+    background: rgba(255, 255, 255, 0.05);
+    color: #f2f2f2;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+.btn-color-2:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
+}
+  
+/* ========================================================================= */
+
+@keyframes fadeInProfile {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ========================================================================= */
@@ -165,4 +387,18 @@ body, html, header, #profile {
 .fade-icon:hover {
     transform: scale(1.2);
     filter: brightness(1.2);
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+      position: static;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+  
+    .profile-right {
+      align-items: center;
+    }
 }

@@ -1,334 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Uyen Vu – Full Stack Developer Portfolio">
-    <meta name="keywords" content="Node.js, React, Full Stack, Backend Developer, Portfolio, Houston">
-    <meta name="author" content="Uyen Vu">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/mediaqueries.css">
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Uyen Vu</div>
-        <div class="nav-center">
-            <ul class="nav-links">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Uyen Vu – Full Stack Developer Portfolio">
+        <meta name="keywords" content="Node.js, React, Full Stack, Backend Developer, Portfolio, Houston">
+        <meta name="author" content="Uyen Vu">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/mediaqueries.css">
+    </head>
+
+    <body>
+        <section id="profile">
+            <div class="profile-container">
+                <div class="profile-left">
+                    <div class="profile-top-bar">
+                        <div class="profile-icons">
+                            <a href="https://github.com/uynvu078" target="_blank" class="icon fade-icon" >
+                                <img src="./assets/github.png" alt="GitHub" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/uyen-vu-sf8358/" target="_blank" class="icon fade-icon" >
+                                <img src="./assets/linkedin.png" alt="LinkedIn" />
+                            </a>
+                            <a href="mailto:your.email@example.com" class="icon fade-icon" >
+                                <img src="./assets/email.png" alt="Email" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section__text">
+                        <p class="section__text__p1 fade-text">Hello, I'm</p>
+                        <h1 class="role-title fade-title">Uyen Vu</h1>
+                        <p class="section__text__p2 fade-text">Full Stack Developer | Frontend & Backend Engineer</p>
+                        <hr class="divider" />
+                        <p class="section__text__p3 fade-text">Building reliable APIs and polished interfaces — from backend logic to responsive UI. Passionate about creating impactful, scalable software users love.</p>
+                        <div class="btn-container">
+                            <button 
+                            class="btn btn-color-2 fade-btn" 
+                            onclick="window.open('./assets/Resume.pdf')">
+                                Download CV
+                            </button>
+                            <button 
+                            class="btn btn-color-1 fade-btn" 
+                            onclick="location.href='./#contact'">
+                                Contact Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-right">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="section__pic-container">
+                        <img src="./assets/profile-pic.png" alt="profile picture" />
+                    </div>
+                    <div class="profile-name-tag fade-text">
+                        <p>👋 Nice to meet you!</p>
+                        <h2>- Uyen Vu</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- <div class="radial-divider"></div> -->
+        <div class="section-divider"></div>
+
+
+        <section id="about" class="about-elegant">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__illustration-container">
+                    <img 
+                        src="./assets/about-illustration.png" 
+                        alt="Illustration of developer" 
+                        class="about-illustration"
+                    />
+                </div> 
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img 
+                                src="./assets/experience.png" 
+                                alt="ExperienceIcon" 
+                                class="icon"
+                            />
+                            <h3>Experience</h3>
+                            <p>Hands-on Software Development <br> 5+ years in Customer Service</p>
+                        </div>
+                        <div class="details-container">
+                            <img 
+                                src="./assets/education.png" 
+                                alt="EducationIcon" 
+                                class="icon"
+                            />
+                            <h3>Education</h3>
+                            <p>B.Sc. Computer Science <br> Minor: Business Administration</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p class="about-paragraph">
+                            I'm <span class="highlighted">Uyen Vu</span>, a <span class="highlighted">full stack developer</span> passionate about crafting 
+                            <span class="highlighted">fast</span>, <span class="highlighted">scalable</span>, and <span class="highlighted">intuitive</span> web 
+                            applications — from sleek front-end interfaces to powerful backend logic. I bring hands-on experience with <span class="highlighted">React, 
+                            Node.js, Express, SQL,</span> and <span class="highlighted">MongoDB</span>, building full applications that solve real-world challenges.
+                        </p>
+                        <p class="about-paragraph">
+                            With over <span class="highlighted">5 years of customer service experience</span>, I’m <span class="highlighted">collaborative</span>, 
+                            <span class="highlighted">adaptable</span>, and focused on <span class="highlighted">user-centered design</span>. I thrive in fast-paced 
+                            environments and love turning ideas into impactful digital products. I'm currently seeking a <span class="highlighted">frontend, backend, or 
+                            full stack role</span> where I can <span class="highlighted">contribute immediately</span> and <span class="highlighted">keep growing</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>      
+            <img 
+                src="./assets/arrow.png" 
+                alt="ArrowIcon" 
+                class="arrow"
+                onclick="location.href='./#experience'"
+            />
+        </section>
+
+
+        <section id="experience">
+            <h1 class="title">My Technical Skills</h1>
+            <div class="skills-container">
+                <div class="skill-row">
+                    <div class="skill-title">Languages</div>
+                    <div class="skill-arrow">→</div>
+                    <div class="skill-content">
+                        <span class="skill-bubble" data-icon="💻">JavaScript(ES6+)</span>
+                        <span class="skill-bubble" data-icon="⚙️">C/C#/C++</span>
+                        <span class="skill-bubble" data-icon="🐍">Python</span>
+                        <span class="skill-bubble" data-icon="🌐">HTML5</span>
+                        <span class="skill-bubble" data-icon="🎨">CSS3</span>                    
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-title">Backend</div>
+                    <div class="skill-arrow">→</div>
+                    <div class="skill-content">
+                        <span class="skill-bubble" data-icon="🟢">Node.js</span>
+                        <span class="skill-bubble" data-icon="🚀">Express.js</span>
+                        <span class="skill-bubble" data-icon="🔗">REST APIs</span>
+                        <span class="skill-bubble" data-icon="🔄">GraphQL</span>
+                        <span class="skill-bubble" data-icon="🌐">WebSockets</span>
+                        <span class="skill-bubble" data-icon="📦">.NET</span>                    
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-title">Frontend</div>
+                    <div class="skill-arrow">→</div>
+                    <div class="skill-content">
+                        <span class="skill-bubble" data-icon="⚛️">React</span>
+                        <span class="skill-bubble" data-icon="🌌">Next.js</span>
+                        <span class="skill-bubble" data-icon="🎀">Bootstrap CSS</span>
+                        <span class="skill-bubble" data-icon="🔍">React Query</span>                    
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-title">Databases</div>
+                    <div class="skill-arrow">→</div>
+                    <div class="skill-content">
+                        <span class="skill-bubble" data-icon="🛢️">SQL (PostgreSQL, MySQL)</span>
+                        <span class="skill-bubble" data-icon="🍃">MongoDB</span>                    
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-title">Tools</div>
+                    <div class="skill-arrow">→</div>
+                    <div class="skill-content">
+                        <span class="skill-bubble" data-icon="🔧">Git</span>
+                        <span class="skill-bubble" data-icon="🐙">GitHub</span>
+                        <span class="skill-bubble" data-icon="🔗">REST APIs</span>
+                        <span class="skill-bubble" data-icon="🌐">WebSockets</span>
+                        <span class="skill-bubble" data-icon="🌀">Agile</span>
+                        <span class="skill-bubble" data-icon="🖌️">Adobe XD</span>                    
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <div class="skill-title">Other</div>
+                    <div class="skill-arrow">→</div>
+                    <div class="skill-content">
+                        <span class="skill-bubble" data-icon="🧪">Unit Testing</span>
+                        <span class="skill-bubble" data-icon="🐞">Debugging</span>
+                        <span class="skill-bubble" data-icon="☁️">Azure DevOps (basic)</span>
+                        <span class="skill-bubble" data-icon="🎨">Figma</span>
+                        <span class="skill-bubble" data-icon="📝">VS Code</span>                    
+                    </div>
+                </div>
+            </div>
+            <img 
+                src="./assets/arrow.png" 
+                alt="ArrowIcon" 
+                class="icon arrow"
+                onclick="location.href='./#projects'"
+            />
+        </section>
+
+        <section id="projects">
+            <h1 class="title">My Works in Action</h1>
+            <p class="section__text__p1">
+                Each of these apps demonstrates my ability to
+                <strong>build, deploy, and maintain full-stack applications</strong>
+                from scratch.
+            </p>
+            <div class="project-gallery">
+                <!-- PROJECT #1 -->
+                <div class="project-card">
+                    <img src="./assets/project-1.png" alt="ZenTasker">
+                    <div class="project-tags">
+                        <span>App</span><span>Productivity</span>
+                    </div>
+                    <h2>ZENTASKER TODO APP</h2>
+                    <button class="expand-btn" onclick="toggleProject(this)">
+                        <span class="arrowE">&#9660;</span>
+                    </button>
+                    <div class="project-details">
+                        <p>A full-stack productivity app for organizing tasks with drag-and-drop functionality, real-time syncing, and role-based access control. Built using the MERN stack (MongoDB, Express, React, Node.js).</p>
+                        <div class="btn-container">
+                            <a href="https://github.com/uynvu078/ZenTasker-Todo.git" target="_blank" rel="noopener noreferrer">
+                                <button class="btn project-btn">GitHub</button>
+                            </a>
+                            <a href="https://uynvu078.github.io/ZenTasker-Todo/" target="_blank" rel="noopener noreferrer">
+                                <button class="btn project-btn">Live Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT #2 -->
+                <div class="project-card">
+                    <img src="./assets/project-2.png" alt="BEAUShop">
+                    <div class="project-tags">
+                        <span>Website</span><span>E-Commerce</span>
+                    </div>
+                    <h2>E-Commerce BEAU SHOP</h2>
+                    <button class="expand-btn" onclick="toggleProject(this)">
+                        <span class="arrowE">&#9660;</span>
+                    </button>
+                    <div class="project-details">
+                        <p>A modern online store with secure JWT authentication, shopping cart functionality, and PostgreSQL-backed order processing. Built with React and Node.js.</p>
+                        <div class="btn-container">
+                            <a href="https://github.com/uynvu078/BEAUShop.git" target="_blank" rel="noopener noreferrer">
+                                <button class="btn project-btn">GitHub</button>
+                            </a>
+                            <a href="https://uynvu078.github.io/BEAUShop/" target="_blank" rel="noopener noreferrer">
+                                <button class="btn project-btn">Live Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT #3 -->
+                <div class="project-card">
+                    <img src="./assets/project-3.png" alt="ChatterBox">
+                    <div class="project-tags">
+                        <span>App</span><span>Chat</span>
+                    </div>
+                    <h2>Real Time CHATTERBOX</h2>
+                    <button class="expand-btn" onclick="toggleProject(this)">
+                        <span class="arrowE">&#9660;</span>
+                    </button>
+                    <div class="project-details">
+                        <p>A real-time messaging platform with room-based chat, persistent conversations, and WebSocket-based communication. Built using React, Node.js, Socket.io, and MongoDB.</p>
+                        <div class="btn-container">
+                            <a href="https://github.com/uynvu078/ChatterBox.git" target="_blank" rel="noopener noreferrer">
+                                <button class="btn project-btn">GitHub</button>
+                            </a>
+                            <a href="https://uynvu078.github.io/ChatterBox/" target="_blank" rel="noopener noreferrer">
+                                <button class="btn project-btn">Live Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img 
+                src="./assets/arrow.png" 
+                alt="ArrowIcon" 
+                class="icon arrow"
+                onclick="location.href='./#contact'"
+            />
+        </section>
+
+
+        <section id="contact">
+            <h1 class="title">Let's Get In Touch</h1>
+            <div class="contact-info-upper-container">
+                <!-- Left Column: Contact Info + Icon -->
+                <div class="contact-left">
+                    <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> uyenvu315@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> United States</p>
+                    </div>
+                    <div class="contact-image">
+                    <img src="./assets/envelope-icon.png" alt="Envelope Icon" />
+                    </div>
+                </div>
+                <!-- Right Column: Form -->
+                <form
+                    action="https://formspree.io/f/xzzevpbr" 
+                    method="POST"
+                    class="contact-form"
+                >
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="_replyto" placeholder="Your Email" required />
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-color-1">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+
+        <footer>
+            <ul class="footer-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Uyen Vu</div>
-    </nav>
+            <div class="footer-divider"></div>
+            <p>Copyright &#169; 2025 Uyen Vu. All Rights Reserved</p>
+        </footer>
 
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-    </div>
 
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="profile picture" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1 fade-text">Hello, I'm</p>
-                <h1 class="title fade-title">Uyen Vu</h1>
-                <p class="section__text__p2 fade-text">Full Stack Developer | Frontend & Backend Engineer</p>
-                <p class="section__text__p3 fade-text">Building reliable APIs and polished interfaces — from backend logic to responsive UI. Passionate about creating impactful, scalable software users love.</p>
-            <div class="btn-container">
-                <button 
-                    class="btn btn-color-2 fade-btn" 
-                    onclick="window.open('./assets/Resume.pdf')">
-                Download CV</button>
-                <button 
-                    class="btn btn-color-1 fade-btn" 
-                    onclick="location.href='./#contact'">
-                Contact Info</button>
-            </div>
-            <div id="social-container">
-                <img    
-                    src="./assets/linkedin.png" 
-                    alt="LinkedIn" 
-                    class="icon fade-icon" 
-                    onclick="location.href='https://www.linkedin.com/in/uyen-vu-sf8358/'"
-                />
-                <img    
-                    src="./assets/github.png" 
-                    alt="GitHub" 
-                    class="icon fade-icon" 
-                    onclick="location.href='https://github.com/uynvu078'"
-                />
-            </div>
-        </div>
-    </section>
+        <script src="script.js"></script>
+    </body>
 
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__illustration-container">
-                <img 
-                    src="./assets/about-illustration.png" 
-                    alt="Illustration of developer" 
-                    class="about-illustration"
-                />
-            </div> 
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.png" 
-                            alt="ExperienceIcon" 
-                            class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>Hands-on Software Development <br> 5+ years in Customer Service</p>
-                    </div>
-                    <div class="details-container">
-                        <img 
-                            src="./assets/education.png" 
-                            alt="EducationIcon" 
-                            class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>B.Sc. Computer Science <br> Minor: Business Administration</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I'm <strong>Uyen Vu</strong>, a <strong>full stack developer</strong> with a passion for building 
-                        fast, scalable, and user-friendly web applications — from polished interfaces to robust backend logic.
-                        I bring hands-on experience with <strong>React, Node.js, Express, SQL, and MongoDB</strong>,
-                        and I’ve delivered complete applications that solve real-world problems.
-                    </p>
-                    <p>
-                        With over <strong>5 years in customer service</strong>, I’m highly collaborative, adaptable, and focused 
-                        on user experience. I thrive in fast-paced environments and love turning ideas into products people enjoy using.
-                        I’m actively seeking a frontend, backend, or full stack software engineering role where I can 
-                        contribute from day one and continue growing.
-                    </p>
-                </div>
-            </div>
-        </div>      
-        <img 
-            src="./assets/arrow.png" 
-            alt="ArrowIcon" 
-            class="icon arrow"
-            onclick="location.href='./#experience'"
-        />
-    </section>
-
- <section id="experience">
-        <p class="section__text__p1">Let's Explore My</p>
-        <h1 class="title">Experience & Skills</h1>
-        
-        <div class="skills-container">
-            <div class="skill-row">
-                <div class="skill-title">Languages</div>
-                <div class="skill-arrow">→</div>
-                <div class="skill-content">
-                    <span class="skill-bubble">JavaScript(ES6+)</span>
-                    <span class="skill-bubble">C/C#/C++</span>
-                    <!-- <span class="skill-bubble">TypeScript</span> -->
-                    <span class="skill-bubble">Python</span>
-                    <span class="skill-bubble">HTML5</span>
-                    <span class="skill-bubble">CSS3</span>
-                </div>
-            </div>
-    
-            <div class="skill-row">
-                <div class="skill-title">Backend</div>
-                <div class="skill-arrow">→</div>
-                <div class="skill-content">
-                    <span class="skill-bubble">Node.js</span>
-                    <span class="skill-bubble">Express.js</span>
-                    <span class="skill-bubble">REST APIs</span>
-                    <span class="skill-bubble">GraphQL</span>
-                    <span class="skill-bubble">WebSockets</span>
-                    <span class="skill-bubble">.NET</span>
-                </div>
-            </div>
-    
-            <div class="skill-row">
-                <div class="skill-title">Frontend</div>
-                <div class="skill-arrow">→</div>
-                <div class="skill-content">
-                    <span class="skill-bubble">React</span>
-                    <span class="skill-bubble">Next.js</span>
-                    <span class="skill-bubble">Bootstrap CSS</span>
-                    <span class="skill-bubble">React Query</span>
-                </div>
-            </div>
-    
-            <div class="skill-row">
-                <div class="skill-title">Databases</div>
-                <div class="skill-arrow">→</div>
-                <div class="skill-content">
-                    <span class="skill-bubble">SQL (PostgreSQL, MySQL)</span>
-                    <span class="skill-bubble">MongoDB</span>
-                </div>
-            </div>
-    
-            <div class="skill-row">
-                <div class="skill-title">Tools</div>
-                <div class="skill-arrow">→</div>
-                <div class="skill-content">
-                    <span class="skill-bubble">Git</span>
-                    <span class="skill-bubble">GitHub</span>
-                    <span class="skill-bubble">REST APIs</span>
-                    <span class="skill-bubble">WebSockets</span>
-                    <span class="skill-bubble">Agile</span>
-                    <span class="skill-bubble">Adobe XD</span>
-                </div>
-            </div>
-    
-            <div class="skill-row">
-                <div class="skill-title">Other</div>
-                <div class="skill-arrow">→</div>
-                <div class="skill-content">
-                    <span class="skill-bubble">Unit Testing</span>
-                    <span class="skill-bubble">Debugging</span>
-                    <span class="skill-bubble">Azure DevOps (basic)</span>
-                    <span class="skill-bubble">Figma</span>
-                    <span class="skill-bubble">VS Code</span>
-                </div>
-            </div>
-        </div>
-        <img 
-            src="./assets/arrow.png" 
-            alt="ArrowIcon" 
-            class="icon arrow"
-            onclick="location.href='./#projects'"
-        />
-    </section>    
-
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <p class="section__text__p1">
-            Each of these apps demonstrates my ability to 
-            <strong>build, deploy, and maintain full-stack applications</strong> 
-            from scratch.
-        </p>
-        <div class="project-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                            src="./assets/project-1.png" 
-                            alt="Project1"
-                            class="project-img"
-                        >
-                    </div>
-                    <h2 class="experience-sub-title project-title">ZENTASKER TODO APP</h2>
-                    <p class="project-description">
-                        A full-stack productivity app for organizing tasks with drag-and-drop functionality, real-time syncing, and role-based access control.
-                        Built using the MERN stack (MongoDB, Express, React, Node.js), this solo project showcases advanced state management and intuitive UI/UX design.
-                    </p>                      
-                    <div class="btn-container">
-                        <a href="https://github.com/uynvu078/ZenTasker-Todo.git" target="_blank" rel="noopener noreferrer">
-                            <button class="btn btn-color-2 project-btn">GitHub</button>
-                        </a>
-                        <a href="https://uynvu078.github.io/ZenTasker-Todo/" target="_blank" rel="noopener noreferrer">
-                            <button class="btn btn-color-2 project-btn">Live Demo</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                            src="./assets/project-2.png" 
-                            alt="Project2"
-                            class="project-img"
-                        >
-                    </div>
-                    <h2 class="experience-sub-title project-title">E-Commerce BEAU SHOP</h2>
-                    <p class="project-description">
-                        A modern online store with secure JWT authentication, shopping cart functionality, and PostgreSQL-backed order processing.
-                        Developed with React and Node.js, it features product filtering, responsive design, and seamless user checkout flow.
-                    </p>                                          
-                    <div class="btn-container">
-                        <a href="https://github.com/uynvu078/BEAUShop.git" target="_blank" rel="noopener noreferrer">
-                            <button class="btn btn-color-2 project-btn">GitHub</button>
-                        </a>
-                        <a href="https://uynvu078.github.io/BEAUShop/" target="_blank" rel="noopener noreferrer">
-                            <button class="btn btn-color-2 project-btn">Live Demo</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                            src="./assets/project-3.png" 
-                            alt="Project3"
-                            class="project-img"
-                        >
-                    </div>
-                    <h2 class="experience-sub-title project-title">Real Time CHATTERBOX</h2>
-                    <p class="project-description">
-                        A real-time messaging platform with room-based chat, persistent conversations, and WebSocket-based communication.
-                        Built using React, Node.js, Socket.io, and MongoDB, it includes user authentication, typing indicators, and clean responsive UI.
-                      </p>
-                    <div class="btn-container">
-                        <a href="https://github.com/uynvu078/ChatterBox.git" target="_blank" rel="noopener noreferrer">
-                            <button class="btn btn-color-2 project-btn">GitHub</button>
-                        </a>
-                        <a href="https://uynvu078.github.io/ChatterBox/" target="_blank" rel="noopener noreferrer">
-                            <button class="btn btn-color-2 project-btn">Live Demo</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img 
-            src="./assets/arrow.png" 
-            alt="ArrowIcon" 
-            class="icon arrow"
-            onclick="location.href='./#contact'"
-        />
-    </section>
-
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <form
-                action="https://formspree.io/f/xzzevpbr" 
-                method="POST"
-                class="contact-form"
-            >
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="_replyto" placeholder="Your Email" required />
-            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-color-1">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <ul class="footer-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="footer-divider"></div>
-        <p>Copyright &#169; 2025 Uyen Vu. All Rights Reserved</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
 </html>

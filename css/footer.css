@@ -1,67 +1,61 @@
 /* ======================================== */
 /* FOOTER SECTION */
 footer {
-    color: black !important;
+    color: #3e2b1f;
     text-align: center;
-    padding: 2rem 0;
-    margin: 0;
-    position: relative;
+    font-family: 'Georgia', serif;
+    padding-bottom: 1.5rem;
+    margin-top: 0;
 }
-
+  
 .footer-links {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.5rem;
     list-style: none;
-    padding: 0 !important;
-    margin: 0 auto 1.5rem auto !important;
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+.footer-links li {
+    display: inline-block;
 }
 
 .footer-links a {
-    color: black !important;
-    font-size: 1.3rem;
+    color: #3e2b1f;
+    font-size: 1.5rem;
+    font-weight: 500;
     text-decoration: none;
-    background: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    position: relative;
+    transition: color 0.3s ease;
 }
-
-.footer-links li {
-    background: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    display: inline-block;
-    border: none !important;
-    box-shadow: none !important;
+.footer-links a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #c0a080;
+    transition: width 0.3s ease;
+    margin: 0.2rem auto 0 auto;
 }
-
-footer * {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
 .footer-links a:hover {
-    color: #C0A080 !important;
-    text-decoration: underline;
-    text-underline-offset: 0.4rem;
+    color: #c0a080;
 }
-
+.footer-links a:hover::after {
+    width: 100%;
+}
+  
 .footer-divider {
     width: 60%;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    margin: 1rem auto;
+    height: 3px;
+    background-color: rgba(61, 43, 31, 0.2);
+    margin: 1.5rem auto;
 }
-
+  
 footer p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #3e2b1f;
     opacity: 0.8;
-    color: black !important;
+    margin: 0;
 }

@@ -16,15 +16,8 @@
 }
 body {
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(
-  100deg,
-  #3a3a3a 0%,        /* slightly lighter charcoal */
-  #6a665f 20%,        /* softened warm gray */
-  #e2d9d0 60%,        /* brighter beige-taupe */
-  #ffffff 100%        /* crisp but soft white */
-);
-
-    color: #222;
+    background: linear-gradient(to right, #fffaf9, #f6ede9);
+    color: #3b3b3b;
 }
 html {
     scroll-behavior: smooth;
@@ -152,54 +145,6 @@ section {
     display: flex;
 }
 
-/* ======================================== */
-/* BUTTONS SECTION */
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.btn {
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
-}
-
-.btn-color-1, 
-.btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
-}
-.btn-color-1:hover, 
-.btn-color-2:hover {
-    cursor: pointer;
-}
-.btn-color-1, 
-.btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
-}
-
-.btn-color-1:hover {
-    background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-    gap: 1rem;
-}
-
-
 .section-divider {
     width: 90%;
     height: 2.5px;
@@ -216,7 +161,6 @@ section {
     border-radius: 2px;
     box-shadow: 0 0 8px rgba(91, 64, 49, 0.4);
   }
-  
   /* Decorative dot in center */
   .section-divider::after {
     content: '';

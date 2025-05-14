@@ -35,12 +35,14 @@
     width: 100%;
     object-fit: contain;
     transition: transform 0.4s ease, filter 0.4s ease;
-    filter: drop-shadow(0 6px 22px rgba(255, 245, 220, 0.85));
+    filter: drop-shadow(0 8px 24px rgba(243, 195, 179, 0.6))
+            drop-shadow(0 0 12px rgba(255, 225, 220, 0.4));
     animation: pulse 4s ease-in-out infinite;
 }
 .about-illustration:hover {
     transform: scale(1.07);
-    filter: drop-shadow(0 10px 16px rgba(247, 228, 190, 0.5));
+    filter: drop-shadow(0 10px 30px rgba(243, 195, 179, 0.7))
+            drop-shadow(0 0 16px rgba(255, 225, 220, 0.45));
     animation: floatRotate 6s ease-in-out infinite;
 }
   
